@@ -224,7 +224,7 @@ os.execute('wget https://raw.githubusercontent.com/JaafarSadiq7778/devBot/main/N
 dofile('NASA.lua')  
 return false 
 end
-if text == "🔄 | 00تحديث المصنوعات" then
+if text == "🔄 | تحديث المصنوعات" then
 Redis:del(NASA..'3ddbots')
 for folder in io.popen('ls'):lines() do
 if folder:match('@[%a%d_]') then
@@ -264,7 +264,7 @@ Redis:del(NASA..msg.sender_id.user_id.."brodcast:fwd")
 return send(msg.chat_id,msg.id,"*◍ تـم الـغاء الامـر بنـجاح ..*","md")
 end
 
-if text == "/start" or text == "🔚 | القائمه الرئيسيه"then 
+if text == "/admin" or text == "🔚 | القائمه الرئيسيه"then 
 Redis:del(NASA..msg.sender_id.user_id.."bottoken")
 Redis:del(NASA..msg.sender_id.user_id.."botuser")
 Redis:del(NASA..msg.sender_id.user_id.."make:bot")
