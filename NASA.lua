@@ -216,7 +216,7 @@ Reply    = '\n*◍ المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*
 end
 
 if Dev(msg) then
-if text == "تحديث" or text == "♻️ | 0تحديث الصانع" then
+if text == "تحديث" or text == "♻️ | تحديث الصانع" then
 LuaTele.sendText(Sudo_Id,0,"تم تحديث ملف المصنع بنجاح✅")
 os.execute('rm -rf NASA.lua')
 os.execute('curl -s https://raw.githubusercontent.com/JaafarSadiq7778/devBot/main/NASA.lua')
@@ -224,7 +224,7 @@ os.execute('wget https://raw.githubusercontent.com/JaafarSadiq7778/devBot/main/N
 dofile('NASA.lua')  
 return false 
 end
-if text == "🔄 | تحديث المصنوعات" then
+if text == "🔄 | 00تحديث المصنوعات" then
 Redis:del(NASA..'3ddbots')
 for folder in io.popen('ls'):lines() do
 if folder:match('@[%a%d_]') then
