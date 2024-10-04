@@ -216,7 +216,7 @@ Reply    = '\n*◍ المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*
 end
 
 if Dev(msg) then
-if text == "تحديث" or text == "♻️ | تحديث الصانع" then
+if text == "تحديث" or text == "♻️ | 0تحديث الصانع" then
 LuaTele.sendText(Sudo_Id,0,"تم تحديث ملف المصنع بنجاح✅")
 os.execute('rm -rf NASA.lua')
 os.execute('curl -s https://raw.githubusercontent.com/JaafarSadiq7778/devBot/main/NASA.lua')
