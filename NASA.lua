@@ -265,7 +265,7 @@ Redis:del(NASA..msg.sender_id.user_id.."brodcast:fwd")
 return send(msg.chat_id,msg.id,"*◍ تـم الـغاء الامـر بنـجاح ..*","md")
 end
 
-if text == "/admin" or text == "🔚 | القائمه الرئيسيه"then 
+if text == "/start" or text == "🔚 | القائمه الرئيسيه"then 
 Redis:del(NASA..msg.sender_id.user_id.."bottoken")
 Redis:del(NASA..msg.sender_id.user_id.."botuser")
 Redis:del(NASA..msg.sender_id.user_id.."make:bot")
